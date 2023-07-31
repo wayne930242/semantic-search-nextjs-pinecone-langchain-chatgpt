@@ -38,15 +38,15 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between p-24">
       <input className='text-black px-2 py-1' onChange={e => setQuery(e.target.value)} />
-      <button className="px-7 py-1 rounded-2xl bg-white text-black mt-2 mb-2" onClick={sendQuery}>Ask AI</button>
+      <button className="px-7 py-1 rounded-2xl bg-white text-black mt-2 mb-2" onClick={sendQuery}>問 AI</button>
       {
-        loading && <p>Asking AI ...</p>
+        loading && <p>問 AI 關於民法的問題...</p>
       }
       {
         result && <p>{result}</p>
       }
       { /* consider removing this button from the UI once the embeddings are created ... */}
-      <button onClick={createIndexAndEmbeddings}>Create index and embeddings</button>
+      <button onClick={createIndexAndEmbeddings}>建立索引並嵌入</button>
     </main>
   )
 }
