@@ -40,7 +40,7 @@ export default function Home() {
       <input className='text-black px-2 py-1' onChange={e => setQuery(e.target.value)} />
       <button className="px-7 py-1 rounded-2xl bg-white text-black mt-2 mb-2" onClick={sendQuery}>問 AI</button>
       {
-        loading && <p>問 AI 關於民法的問題...</p>
+        loading && <p>問 AI 關於 Dnd 的問題...</p>
       }
       {
         result && <p>{result}</p>

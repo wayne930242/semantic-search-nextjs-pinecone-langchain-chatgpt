@@ -1,2 +1,2 @@
-export const indexName = 'sq1-demo'
+export const indexName = 'dnd-demo'
 export const timeout = 180000
